@@ -10,8 +10,7 @@ It can be seen from the following running results that the value of the paramete
 
 *K-NN是一种基于实例的学习，或者是局部近似和将所有计算推迟到分类之后的惰性学习。k-近邻算法是所有的机器学习算法中最简单的之一。*
 
-从如下的运行结果可以看出，参数k的取值对正确率有很大的影响。
-
+从如下的运行结果可以看出，当参数k取不同值时，分类结果有显著不同。
 ### k=3
 
 ![k=3](KNN/pictures/k3.jpg)
