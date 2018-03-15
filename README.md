@@ -36,12 +36,3 @@ It can be seen from the following running results that the value of the paramete
 ![result](SVM/pictures/result.jpg)
 
 
-## 第一题（暴力模拟）
-针对每一个时刻，判断是否有两个点相遇，相遇后权值小的标记为*dead*，此后不在判断该点，*t* 时刻后输出各点位置。时间复杂度$O\left( t*n^2\right)$
-## 第二题（动态规划）
-设$dp[i]$表示结点$1$到结点$i$的路径数，则有公式
-$dp[j] = \sum_{i=1}^{j-1} F(Ai⊕Aj)*dp[j]$，$dp[n]$即为所求。
-时间复杂度为$O\left( n^2\right)$
-
-## 第三题（伸展树）
-由于涉及到区间修改、区间翻转、区间查询，所以应该用splay树来维护，单次操作$O\left(\log{n}\right)$，共$q$次操作，$q$与$n$同数量级，所以总的复杂度为$O\left(n\log{n}\right)$。
